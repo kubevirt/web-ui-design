@@ -1,1 +1,7 @@
 theme: jekyll-theme-slate
+title: UI Design Documentation
+description: 
+baseurl: /web-ui-design
+links:
+  - title: Home
+    url: /
