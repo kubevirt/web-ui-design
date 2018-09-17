@@ -1,14 +1,19 @@
 ## UI Design Documentation
 
+[Website](https://kubevirt.io/web-ui-design/) // [Repository](https://github.com/kubevirt/web-ui-design)
+
 This documentation shows an initial approach to allowing users to make use of KubeVirt features in the context of the [OpenShift Console](https://github.com/openshift/console).
 
 ### Scenarios
 
-- Create VM
-- Graphical/Serial Console Access
-- Launcher
-- Migrate VM(s)
-- Scaling VMs List
-- Templates
-- VM Details Dashboard
-- VM List View with States and Actions
+#### Virtual Machines
+
+- [Create VM](ui-design/virtual-machines/create-vm/create-vm.md)
+- [Migrate VM](ui-design/virtual-machines/migrate-vm/migrate-vm.md)
+- [List view](ui-design/virtual-machines/vm-list/vm-list.md)
+- Details view
+- Console view
+
+#### Templates
+
+- [Create template](ui-design/templates/create/create-template.md)
