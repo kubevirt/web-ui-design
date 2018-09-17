@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  max-width: 720px;
+}
+
+#main_content_wrap {
+  border: initial;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1240px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+#footer_wrap {
+  align-self: flex-end;
+}
+
+li > ul, li > ol {
+  margin-bottom: initial;
+}
