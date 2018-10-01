@@ -8,7 +8,7 @@ This documentation shows an initial approach to allowing users to make use of Ku
 
 #### Virtual Machines
 
-- [Create VM](ui-design/virtual-machines/create-vm/create-vm.md)
+- Create VM
 - [Migrate VM](ui-design/virtual-machines/migrate-vm/migrate-vm.md)
 - [List view](ui-design/virtual-machines/vm-list/vm-list.md)
 - Details view
@@ -16,4 +16,4 @@ This documentation shows an initial approach to allowing users to make use of Ku
 
 #### Templates
 
-- [Create template](ui-design/templates/create/create-template.md)
+- Create Template
