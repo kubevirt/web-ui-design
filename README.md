@@ -9,6 +9,7 @@ This documentation shows an initial approach to allowing users to make use of Ku
 #### Virtual Machines
 
 - Create VM
+- [Clone VM](ui-design/virtual-machines/clone-vm/clone-vm.md)
 - [Migrate VM](ui-design/virtual-machines/migrate-vm/migrate-vm.md)
 - [List view](ui-design/virtual-machines/vm-list/vm-list.md)
 - Details view
