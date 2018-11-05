@@ -18,7 +18,7 @@ The VM list contains columns for the following:
 
 For now, long lists of items will be displayed in an infinitely-scrollable list.
 
-![Infinite pagination](img/1-2-pagination-infinite.png)
+![Infinite scrolling](img/1-2-scroll.png)
 
 ## Filtering
 
