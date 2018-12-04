@@ -6,10 +6,10 @@ The VM list contains columns for the following:
 - Name
 - Namespace
 - Status
-  - Running, Off, Error, Warning, Cloning/Migrating, Unknown
+  - Running, Off, Error (with custom messages), Warning, Cloning/Migrating, Unknown
 - Created
   - Date formatting should follow OpenShift's console, viewable [here](https://github.com/openshift/console/blob/master/frontend/public/components/utils/timestamp.jsx) and [here](https://github.com/openshift/console/blob/master/frontend/public/components/utils/datetime.ts)
-  - If possible, the `div`'s title attribute should be set to the exact date/time of creation, including year so that it appears when hovered.
+  - If possible, a tooltip should appear on hover with the exact creation date, including year.
 - Node
 - IP Address
 - FQDN
@@ -24,9 +24,9 @@ Hovering over an error or warning in a VM's status column should display a toolt
 
 ### Item filters
 
-![filters](img/2-0-filtering-items.png)
+![filters](img/2-0-filtering.png)
 
-The predefined filters in the filter bar can be used to narrow the VM list by Status. The user clicks each tab to toggle it on and off.
+The predefined filters in the filter bar can be used to narrow the VM list by most statuses. The user clicks each filter to toggle it on and off.
 
 If possible, `overflow-y: scroll` should be used to prevent the vertical scrollbar from disappearing when the list is shortened while filtering (preventing uncomfortable jumping).
 
@@ -48,7 +48,7 @@ If possible, the name filter could become a traditional search filter instead, a
 
 ## Sorting
 
-VM lists are sorted alphabetically by name by default. Clicking on a different column title will sort that column the same way. Clicking on the same column title twice will reverse the direction.
+VM lists are sorted alphabetically by name by default. Clicking on a different column title will sort that column the same way. Clicking on the same column title twice will reverse the sort direction.
 
 ![Sort by name](img/3-0-sort-name.png)
 
@@ -58,10 +58,24 @@ VM lists are sorted alphabetically by name by default. Clicking on a different c
 
 ## States and Actions
 
-When a VM is Off, the actions kebab contains options to Run, Edit, Migrate, Clone, Create Template, and Delete the VM.
+When a VM is off, the actions kebab contains options to Run, Edit, Migrate, Clone, Create Template, Take Snapshot, and Delete the VM.
 
-![VM selected while off](img/4-0-selected-vm-off.png)
+![VM actions while off](img/4-0-selected-vm-off.png)
 
-When a VM is Running, the actions kebab contains options to Connect to Console (if available), Edit, Migrate, Clone, Delete, Suspend, Reboot, Force Reboot, Shutdown, and Force Shutdown the VM.
+When a VM is running the Run option is replaced with two dropdowns for Power and Connect to Console.
 
-![VM selected while running](img/4-1-selected-vm-running.png)
+![VM actions while running](img/4-1-0-selected-vm-running-power.png)
+
+The Power dropdown contains options to Suspend, Restart, or Shut down the VM. Because these are potentially destructive actions, clicking any of these options will display a modal for the user to confirm.
+
+![Suspend VM modal](img/4-1-1a-power-modal-suspend.png)
+
+The modals for Restart and Shut down include an additional button to "Force" the action. They also include warnings about the possibility for data loss.
+
+![Restart VM modal](img/4-1-1b-power-modal-restart.png)
+
+![Shut down VM modal](img/4-1-1c-power-modal-shut-down.png)
+
+The Connect to Console dropdown contains quick links to the consoles that are enabled for the VM.
+
+![Connect to consoles action](img/4-2-selected-vm-running-consoles.png)
