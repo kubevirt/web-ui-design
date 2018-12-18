@@ -6,7 +6,7 @@ The VM list contains columns for the following:
 - Name
 - Namespace
 - Status
-  - Running, Off, Error (with custom messages), Warning, Cloning/Migrating, Unknown
+  - Running, Off, Error (with custom messages), Cloning/Migrating, Warning, Pending (with changes that will apply after restart), Unknown
 - Created
   - Date formatting should follow OpenShift's console, viewable [here](https://github.com/openshift/console/blob/master/frontend/public/components/utils/timestamp.jsx) and [here](https://github.com/openshift/console/blob/master/frontend/public/components/utils/datetime.ts)
   - If possible, a tooltip should appear on hover with the exact creation date, including year.
