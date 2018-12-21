@@ -79,3 +79,7 @@ The modals for Restart and Shut down include an additional button to "Force" the
 The Connect to Console dropdown contains quick links to the consoles that are enabled for the VM.
 
 ![Connect to consoles action](img/4-2-selected-vm-running-consoles.png)
+
+When a VM is in a transitional state (cloning, migrating, taking a snapshot, etc.) any unavailable actions in the kebab are disabled and the original action ("Clone") is replaced with a cancel action ("Cancel Clone").
+
+![Transitioning action states](img/4-3-selected-vm-transitioning.png)
