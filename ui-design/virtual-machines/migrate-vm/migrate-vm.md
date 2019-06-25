@@ -1,5 +1,7 @@
 # Migrate VM
 
+<mark>Note:</mark> This design has been updated and merged into the [OpenShift Design repository](https://github.com/openshift/openshift-origin-design).
+
 Clicking the action button next to any Virtual Machine in the List will present the user with the option to migrate the VM to another host.
 
 ![Selecting a VM](img/1-0-list.png)

@@ -1,5 +1,7 @@
 # Import VM
 
+<mark>Note:</mark> This design has been updated and merged into the [OpenShift Design repository](https://github.com/openshift/openshift-origin-design).
+
 ![Provision Source Import](img/1-4-1-0-basic-provision-import.png)
 
 Virtual machines can be imported from a curated list of supported providers.

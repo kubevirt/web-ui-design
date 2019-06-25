@@ -1,5 +1,7 @@
 # Clone VM
 
+<mark>Note:</mark> This design has been updated and merged into the [OpenShift Design repository](https://github.com/openshift/openshift-origin-design).
+
 ![Offline VM in List View](img/2-0-vms.png)
 
 Cloning a VM allows the user to quickly create an identical copy of a virtual machine while powered off.
