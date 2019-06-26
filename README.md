@@ -1,6 +1,8 @@
 ## UI Design Documentation
 
-[Website](https://kubevirt.io/web-ui-design/) // [Repository](https://github.com/kubevirt/web-ui-design)
+<mark>Note:</mark> The designs in this repository have been updated and merged into the [OpenShift Design repository](https://github.com/openshift/openshift-origin-design).
+
+[Website](https://kubevirt.io/web-ui-design/) // <strike>Repository</strike> [New Repository](https://github.com/openshift/openshift-origin-design)
 
 This documentation shows an initial approach to allowing users to make use of KubeVirt features in the context of the [OpenShift Console](https://github.com/openshift/console).
 

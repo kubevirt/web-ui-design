@@ -1,5 +1,7 @@
 # VM List view
 
+<mark>Note:</mark> This design has been updated and merged into the [OpenShift Design repository](https://github.com/openshift/openshift-origin-design).
+
 ![List of VMs](img/0-0-main.png)
 
 The VM list contains columns for the following:
