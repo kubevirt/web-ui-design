@@ -1,3 +1,5 @@
+**⚠️ This repository is deprecated and no longer maintained.**
+
 ## UI Design Documentation
 
 <mark>Note:</mark> The designs in this repository have been updated and merged into the [OpenShift Design repository](https://github.com/openshift/openshift-origin-design).
